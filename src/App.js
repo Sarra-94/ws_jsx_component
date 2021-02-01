@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+// importation Navbar
+import X from "./Component/Navbar/Navbar";
+import User from "./Component/User/User";
 function App() {
+  let name = "seif";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>{name.indexOf("a")}</p>
+      <X />
+      <X />
+      <User />
+      <User />
+      <User />
+      <User />
     </div>
   );
 }
 
 export default App;
+
+// code JSX trying
+{
+  /* <div className="App">
+       si limage est sous le folder src 
+      <img src={logo} />
+      si limage est sous le folder public 
+      <img src="./logo512.png" />
+      <p>{name}</p>
+    </div> */
+}
